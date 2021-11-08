@@ -7,11 +7,11 @@ echo "3. PHP 5.6 FPM"
 echo "4. PHP 7.2 FPM"
 echo "5. NGINX"
 echo "==========================="
-read -p "Pilih Service (eg: 1,2,3) default (1,2,3): " pilihan
+read -p "Pilih Service (eg: 1,2,3) default (1,2,4): " pilihan
 
 if [ -z "$pilihan" ]
 then 
-  pilihan="1,2,3"
+  pilihan="1,2,4"
 fi
 
 IFS=',' read -r -a array <<< "$pilihan"
